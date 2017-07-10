@@ -3,10 +3,9 @@ shinyUI(fluidPage(
         titlePanel("Predict Horsepower from MPG"),
         sidebarLayout(
                 sidebarPanel(
-                        sliderInput("sliderMPG", "What is the MPG of the car?",
-                                    10, 35, value = 20),
-                        checkboxInput("showmodel1", "Show/Hide Model 1", value = TRUE),
-                        checkboxInput("showmodel2", "Show/Hide Model 2", value = TRUE)
+                        sliderInput("sliderMPG", "What is the MPG of the car?", 10, 35, value = 20),
+                        checkboxInput("showModel1", "Show/Hide Model 1", value = TRUE),
+                        checkboxInput("showModel2", "Show/Hide Model 2", value = TRUE)
                 ),
                 mainPanel(
                         plotOutput("plot1"),
